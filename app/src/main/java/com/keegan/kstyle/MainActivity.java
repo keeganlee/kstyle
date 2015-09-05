@@ -17,10 +17,10 @@ package com.keegan.kstyle;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.v7.app.ActionBarActivity;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 
-public class MainActivity extends ActionBarActivity {
+public class MainActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,19 +28,12 @@ public class MainActivity extends ActionBarActivity {
         setContentView(R.layout.activity_main);
     }
 
-    public void toRectangle(View view) {
-        startActivity(new Intent(this, RectangleActivity.class));
+    public void toShape(View view) {
+        startActivity(new Intent(this, ShapeActivity.class));
     }
 
-    public void toOval(View view) {
-        startActivity(new Intent(this, OvalActivity.class));
+    public void toSelector(View view) {
+        startActivity(new Intent(this, SelectorActivity.class));
     }
 
-    public void toLine(View view) {
-        startActivity(new Intent(this, LineActivity.class));
-    }
-
-    public void toRing(View view) {
-        startActivity(new Intent(this, RingActivity.class));
-    }
 }

@@ -15,16 +15,16 @@
  limitations under the License.
 -->
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.keegan.kstyle">
+    package="com.keegan.kstyle" >
 
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
-        android:theme="@style/AppTheme">
+        android:theme="@style/AppTheme" >
         <activity
             android:name=".MainActivity"
-            android:label="@string/app_name">
+            android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -33,16 +33,24 @@
         </activity>
         <activity
             android:name=".RectangleActivity"
-            android:label="@string/title_activity_rectangle"></activity>
+            android:label="@string/title_activity_rectangle" />
         <activity
             android:name=".OvalActivity"
-            android:label="@string/title_activity_oval"></activity>
+            android:label="@string/title_activity_oval" />
         <activity
             android:name=".LineActivity"
-            android:label="@string/title_activity_line"></activity>
+            android:label="@string/title_activity_line" />
         <activity
             android:name=".RingActivity"
-            android:label="@string/title_activity_ring"></activity>
+            android:label="@string/title_activity_ring" />
+        <activity
+            android:name=".ShapeActivity"
+            android:label="@string/title_activity_shape" >
+        </activity>
+        <activity
+            android:name=".SelectorActivity"
+            android:label="@string/title_activity_selector" >
+        </activity>
     </application>
 
 </manifest>

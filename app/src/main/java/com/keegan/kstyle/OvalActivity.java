@@ -16,9 +16,9 @@
 package com.keegan.kstyle;
 
 import android.os.Bundle;
-import android.support.v7.app.ActionBarActivity;
+import android.support.v7.app.AppCompatActivity;
 
-public class OvalActivity extends ActionBarActivity {
+public class OvalActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

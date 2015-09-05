@@ -29,13 +29,27 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="8dp"
-        android:onClick="toShape"
-        android:text="Shape" />
+        android:onClick="toRectangle"
+        android:text="Rectangle" />
 
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="8dp"
-        android:onClick="toSelector"
-        android:text="Selector" />
+        android:onClick="toOval"
+        android:text="Oval" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:onClick="toLine"
+        android:text="Line" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:onClick="toRing"
+        android:text="Ring" />
 </LinearLayout>
