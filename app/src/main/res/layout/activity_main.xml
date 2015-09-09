@@ -38,4 +38,11 @@
         android:layout_margin="8dp"
         android:onClick="toSelector"
         android:text="Selector" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:onClick="toLayerList"
+        android:text="Layer-list" />
 </LinearLayout>

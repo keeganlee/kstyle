@@ -1,4 +1,4 @@
-/**
+/*
  * Copyright (C) 2015. Keegan小钢（http://keeganlee.me）
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,29 +15,17 @@
  */
 package com.keegan.kstyle;
 
-import android.content.Intent;
-import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
-import android.view.View;
+import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuItem;
 
-public class MainActivity extends AppCompatActivity {
+public class LayerListActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
-    }
-
-    public void toShape(View view) {
-        startActivity(new Intent(this, ShapeActivity.class));
-    }
-
-    public void toSelector(View view) {
-        startActivity(new Intent(this, SelectorActivity.class));
-    }
-
-    public void toLayerList(View view) {
-        startActivity(new Intent(this, LayerListActivity.class));
+        setContentView(R.layout.activity_layer_list);
     }
 
 }

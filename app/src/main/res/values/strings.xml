@@ -22,4 +22,5 @@
     <string name="title_activity_ring">Ring</string>
     <string name="title_activity_shape">Shape</string>
     <string name="title_activity_selector">Selector</string>
+    <string name="title_activity_layer_list">Layer-list</string>
 </resources>
