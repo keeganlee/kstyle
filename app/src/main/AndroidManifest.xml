@@ -55,6 +55,8 @@
             android:name=".LayerListActivity"
             android:label="@string/title_activity_layer_list" >
         </activity>
+        <activity android:name=".AnimationActivity" >
+        </activity>
     </application>
 
 </manifest>

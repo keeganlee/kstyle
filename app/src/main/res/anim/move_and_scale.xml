@@ -14,26 +14,18 @@
   See the License for the specific language governing permissions and
   limitations under the License.
   -->
-<layer-list xmlns:android="http://schemas.android.com/apk/res/android"
-    android:paddingTop="16dp"
-    android:paddingBottom="16dp"
-    android:paddingMode="stack">
-    <!-- 阴影 -->
-    <item
-        android:left="2dp"
-        android:top="4dp">
-        <shape>
-            <solid android:color="@android:color/darker_gray" />
-            <corners android:radius="10dp" />
-        </shape>
-    </item>
-    <!-- 前景 -->
-    <item
-        android:bottom="4dp"
-        android:right="2dp">
-        <shape>
-            <solid android:color="#FFFFFF" />
-            <corners android:radius="10dp" />
-        </shape>
-    </item>
-</layer-list>
+<set xmlns:android="http://schemas.android.com/apk/res/android"
+    android:duration="2000">
+    <translate
+        android:fromXDelta="0"
+        android:fromYDelta="0"
+        android:toXDelta="200%"
+        android:toYDelta="0" />
+    <scale
+        android:fromXScale="1.0"
+        android:fromYScale="1.0"
+        android:pivotX="0%"
+        android:pivotY="100%"
+        android:toXScale="1.5"
+        android:toYScale="1.5" />
+</set>

@@ -15,6 +15,7 @@
  */
 package com.keegan.kstyle;
 
+import android.graphics.Shader;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 
