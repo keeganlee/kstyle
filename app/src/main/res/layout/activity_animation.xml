@@ -13,79 +13,117 @@
   See the License for the specific language governing permissions and
   limitations under the License.
   -->
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
     tools:context="com.keegan.kstyle.AnimationActivity">
-    <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="8dp"
-        android:background="@drawable/bg_btn_normal"
-        android:onClick="onFadeIn"
-        android:text="淡入"
-        android:textColor="@android:color/white" />
-
-    <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="8dp"
-        android:background="@drawable/bg_btn_normal"
-        android:onClick="onFadeOut"
-        android:text="淡出"
-        android:textColor="@android:color/white" />
 
     <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
-        android:orientation="horizontal">
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:background="@drawable/bg_btn_normal"
+            android:onClick="onFadeIn"
+            android:text="淡入"
+            android:textColor="@android:color/white" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:background="@drawable/bg_btn_normal"
+            android:onClick="onFadeOut"
+            android:text="淡出"
+            android:textColor="@android:color/white" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:onClick="onZoomIn"
+                android:src="@mipmap/ic_launcher" />
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:onClick="onZoomOut"
+                android:src="@mipmap/ic_launcher" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="8dp"
+                android:onClick="onMoveLeft2Right"
+                android:src="@mipmap/ic_launcher" />
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="8dp"
+                android:onClick="onMoveInFromBottom"
+                android:src="@mipmap/ic_launcher" />
+        </LinearLayout>
+
+        <ImageButton
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@android:color/transparent"
+            android:onClick="onRotate"
+            android:src="@drawable/bg_ring_with_gradient" />
 
         <ImageButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
             android:layout_margin="8dp"
-            android:onClick="onZoomIn"
+            android:onClick="onMoveAndScale"
             android:src="@mipmap/ic_launcher" />
 
-        <ImageButton
-            android:layout_width="wrap_content"
+        <Button
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="8dp"
-            android:onClick="onZoomOut"
-            android:src="@mipmap/ic_launcher" />
+            android:background="@drawable/bg_btn_normal"
+            android:onClick="onValueAnimatorTest"
+            android:text="点我"
+            android:textColor="@android:color/white" />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/bg_btn_normal"
+            android:onClick="onObjectAnimatorTest"
+            android:text="点我"
+            android:textColor="@android:color/white" />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/bg_btn_normal"
+            android:onClick="onAnimatorSetTest"
+            android:text="点我"
+            android:textColor="@android:color/white" />
     </LinearLayout>
-
-    <ImageButton
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
-        android:layout_margin="8dp"
-        android:onClick="onMoveLeft2Right"
-        android:src="@mipmap/ic_launcher" />
-
-    <ImageButton
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
-        android:layout_margin="8dp"
-        android:onClick="onMoveInFromBottom"
-        android:src="@mipmap/ic_launcher" />
-
-    <ImageButton
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        android:layout_gravity="center_horizontal"
-        android:onClick="onRotate"
-        android:src="@drawable/bg_ring_with_gradient"
-        android:background="@android:color/transparent"/>
-    <ImageButton
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
-        android:layout_margin="8dp"
-        android:onClick="onMoveAndScale"
-        android:src="@mipmap/ic_launcher" />
-</LinearLayout>
+</ScrollView>
