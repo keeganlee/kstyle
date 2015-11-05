@@ -19,5 +19,15 @@
     android:pivotX="50%"
     android:pivotY="50%"
     android:toDegrees="1080.0">
+  <shape
+        android:innerRadiusRatio="3"
+        android:shape="ring"
+        android:thicknessRatio="8"
+        android:useLevel="false">
+        <gradient
+            android:endColor="#2F90BD"
+            android:startColor="#FFFFFF"
+            android:type="sweep" />
+    </shape>
 
 </rotate>
